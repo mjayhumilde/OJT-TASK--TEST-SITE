@@ -1,0 +1,38 @@
+.horizontal-line {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  width: 5rem;
+  height: 2px;
+  background-color: green;
+  border: none;
+
+  font-weight: bold;
+}
+
+.our-team-container {
+  background-color: rgb(248 248 248);
+}
+
+.card-content {
+  background-color: white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-image {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.skill-name {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.custom-progress-color {
+  background-color: green;
+}
+
+.clients-container {
+  margin-top: 10rem;
+}
