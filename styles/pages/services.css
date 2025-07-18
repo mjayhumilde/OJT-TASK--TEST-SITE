@@ -1,0 +1,78 @@
+.service-section {
+  background-color: rgb(248 248 248);
+}
+.service-icon-container {
+  background-color: rgb(248 248 248);
+  padding: 10px;
+}
+.service-card {
+  background-color: white;
+  padding: 80px 40px;
+}
+
+.icon-ball {
+  color: blue;
+}
+.icon-docs {
+  color: orange;
+}
+.icon-speed {
+  color: red;
+}
+.icon-layer {
+  color: orange;
+}
+.icon-tv {
+  color: red;
+}
+.icon-bridge {
+  color: green;
+}
+
+.horizontal-line {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  width: 5rem;
+  height: 2px;
+  background-color: green;
+  border: none;
+
+  font-weight: bold;
+}
+
+.feat-1 {
+  color: red;
+}
+.feat-2 {
+  color: orange;
+}
+.feat-3 {
+  color: purple;
+}
+.feat-4 {
+  color: blue;
+}
+.feat-5 {
+  color: aquamarine;
+}
+.feat-6 {
+  color: blueviolet;
+}
+.feat-7 {
+  color: cornflowerblue;
+}
+.feat-8 {
+  color: lightseagreen;
+}
+.feat-9 {
+  color: coral;
+}
+.feat-10 {
+  color: red;
+}
+.feat-11 {
+  color: blue;
+}
+.feat-12 {
+  color: darkcyan;
+}
