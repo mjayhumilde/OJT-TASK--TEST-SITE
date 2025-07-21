@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/pages/single-blog.css" />
@@ -8,560 +9,513 @@
     <link rel="stylesheet" href="./styles//shared//general.css" />
     <link rel="stylesheet" href="./styles/shared/footer.css" />
     <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Single Blog</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="container">
-      <div class="d-flex justify-content-between align-items-center py-2">
-        <div>
-          <h2 class="mb-0"><span class="text-success">TEST</span> SITE</h2>
-        </div>
-        <div
-          class="js-navs d-flex justify-content-center align-items-center gap-3"
-        >
-          <div class="d-flex justify-content-center align-items-center gap-3">
-            <span class="navs fw-semibold fs-8">HOME</span>
-            <span class="navs fw-semibold fs-8"
-              >ABOUT
-              <span class="social"><i class="fa-solid fa-angle-down"></i></span
-            ></span>
-            <span class="navs fw-semibold fs-8">SERVICES</span>
-            <span class="navs fw-semibold fs-8">PORTFOLIO</span>
-            <span class="navs fw-semibold fs-8">PRICING</span>
-            <span class="navs fw-semibold fs-8">BLOG</span>
-            <span class="navs fw-semibold fs-8">CONTACT</span>
-          </div>
-          <div
-            class="border-start border-muted ps-2 d-flex align-items-center justify-content-center gap-2"
-          >
-            <i class="navs fa-brands fa-twitter social"></i>
-            <i class="navs fa-brands fa-facebook social"></i>
-            <i class="navs fa-brands fa-instagram social"></i>
-            <i class="navs fa-brands fa-linkedin social"></i>
-          </div>
-        </div>
-      </div>
+        <nav class="navbar navbar-expand-md ">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <h2 class="mb-0"><span class="text-success">TEST</span>SITE</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link fw-bold  ">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown nav-item d-flex justify-content-start">
+                                <a class="btn nav-link btn-secondary bg-white fw-bold dropdown-toggle border-0 "
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ABOUT
+                                    <a />
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                        <li><a class="dropdown-item" href="#">Team</a></li>
+                                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                        <a href="services.html" class="nav-link fw-bold ">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link fw-bold ">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link fw-bold ">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link fw-bold">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div
+                        class="border-start border-muted text-muted ps-2 d-flex align-items-center justify-content-center gap-2">
+                        <i class="navs fa-brands fa-twitter social"></i>
+                        <i class="navs fa-brands fa-facebook social"></i>
+                        <i class="navs fa-brands fa-instagram social"></i>
+                        <i class="navs fa-brands fa-linkedin social"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-      <section>
-        <div class="container mb-5">
-          <!-- blog cards container -->
-          <div class="row row-cols-md-2 mt-4">
-            <div class="col d-flex flex-column gap-4">
-              <div class="row">
-                <div class="card border-0 shadow rounded-0 p-0">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1682432982609-578969ff8b75?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwbWFufGVufDB8fDB8fHww"
-                    alt=""
-                    class="card-img-top rounded-0"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Card Title</h5>
-                    <div
-                      class="d-flex gap-3 text-muted"
-                      style="font-size: 12px"
-                    >
-                      <div>
-                        <i class="fa-solid fa-user"></i> <span>Mjay</span>
-                      </div>
-                      <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <span>july, 1, 2025</span>
-                      </div>
-                      <div>
-                        <i class="fa-solid fa-comment-dots"></i>
-                        <span>12 comments</span>
-                      </div>
+        <section>
+            <div class="container mb-5">
+                <!-- blog cards container -->
+                <div class="row row-cols-md-2 mt-4">
+                    <div class="col d-flex flex-column gap-4">
+                        <div class="row">
+                            <div class="card border-0 shadow rounded-0 p-0">
+                                <img src="https://plus.unsplash.com/premium_photo-1682432982609-578969ff8b75?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwbWFufGVufDB8fDB8fHww"
+                                    alt="" class="card-img-top rounded-0" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Card Title</h5>
+                                    <div class="d-flex gap-3 text-muted" style="font-size: 12px">
+                                        <div>
+                                            <i class="fa-solid fa-user"></i> <span>Mjay</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span>july, 1, 2025</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-comment-dots"></i>
+                                            <span>12 comments</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Exercitationem itaque, magni quidem et ipsam quae fugiat
+                                        expedita assumenda. Officia temporibus pariatur dolores
+                                        dolorem minus explicabo molestiae aut. Ex, distinctio
+                                        blanditiis!
+                                    </p>
+
+                                    <div class="d-flex py-4 px-1 justify-content-between gap-3 m-2"
+                                        style="background-color: rgb(220, 218, 218)">
+                                        <div style="height: 8rem; width: 6px" class="bg-black"></div>
+                                        <div
+                                            class="d-flex justify-content-center align-items-center text-muted fst-italic fw-bold fs-6">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Sed, eaque amet. Cupiditate unde autem eveniet sunt
+                                            natus quisquam, ipsa asperiores animi atque assumenda
+                                            molestiae fugit architecto quia ea, quas officiis?
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Veritatis, est tempora. Quos optio fuga nostrum,
+                                        cupiditate ut dicta labore incidunt, officiis harum est
+                                        excepturi sapiente libero maiores laborum, mollitia error!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Sit accusantium praesentium suscipit hic error dolores
+                                        pariatur ducimus, minus ullam ipsa, iusto aliquid
+                                        repudiandae blanditiis corrupti necessitatibus voluptate
+                                        reiciendis quidem aliquam!
+                                    </p>
+                                    <h5 class="mt-4 mb-3">Lorem ipsum kahki</h5>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Repudiandae libero laborum labore quam sit quasi
+                                        consequuntur itaque, accusantium possimus saepe numquam,
+                                        animi quo nihil? Facilis cumque animi corporis illo
+                                        nesciunt? Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Iure dolores modi optio itaque totam
+                                        molestias, saepe repellendus accusamus minima, voluptate
+                                        cumque. Dolor repudiandae architecto esse facere, hic
+                                        eveniet non id!
+                                    </p>
+                                    <img class="w-100 mb-2"
+                                        src="https://plus.unsplash.com/premium_photo-1752497523819-9d1e02553a66?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+                                        alt="" />
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Esse fugiat incidunt veniam et delectus suscipit facilis
+                                        reprehenderit eum officiis rerum omnis animi, eveniet
+                                        optio repellat aspernatur sit! Dolor, facere deleniti.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Odio commodi expedita ab nemo minima autem in est
+                                        cupiditate sapiente, corporis eveniet dolores numquam
+                                        ducimus itaque nulla, iure blanditiis ipsa ratione.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Maxime dolorum a rem est asperiores mollitia sapiente
+                                        laborum non iure tempore, laudantium vero, id eius,
+                                        exercitationem alias quia molestiae. Adipisci, quaerat.
+                                    </p>
+                                    <hr class="m-2" />
+                                    <div class="d-flex gap-3 text-muted" style="font-size: 12px">
+                                        <div>
+                                            <span><i class="fa-solid fa-folder"></i></span>
+                                            Business
+                                        </div>
+                                        <div>
+                                            <span><i class="fa-solid fa-tag"></i></span> Creative,
+                                            Tips, Marketing
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shadow mt-4">
+                                <div class="d-flex gap-2 py-3 px-1">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img class="rounded-circle w-100"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAu72pB24JrKJpqABtlUUqV02c4W-BaPyBQ&s"
+                                            alt="" />
+                                    </div>
+                                    <div>
+                                        <h5 class="m-0 mb-1">Mjay Humilde</h5>
+                                        <div class="d-flex gap-2 text-muted mb-2">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </div>
+                                        <p class="text-muted fst-italic">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Debitis assumenda odio eum, nulla, rem voluptates
+                                            in dolor non placeat earum expedita cumque quos deserunt
+                                            reiciendis, quaerat dolorem ratione magni? Numquam?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="my-4 p-0">8 Comments</h5>
+
+                            <!-- comment card -->
+                            <div class="d-flex flex-column">
+                                <div class="d-flex gap-1">
+                                    <img class="w-25 h-25"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s"
+                                        alt="" />
+                                    <div>
+                                        <h6 class="fw-bold m-0">
+                                            Kier Nino
+                                            <span class="px-2"><i class="fa-solid fa-reply"></i> Reply</span>
+                                        </h6>
+                                        <div class="text-muted">
+                                            <p class="m-0 text">09 jan, 2025</p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Doloribus architecto expedita odit fuga. Ea,
+                                                ullam eius fugit, a, tenetur ipsam explicabo omnis
+                                                cupiditate ad cumque laborum distinctio at vero porro.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-1">
+                                    <img class="w-25 h-25"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s"
+                                        alt="" />
+                                    <div>
+                                        <h6 class="fw-bold m-0">
+                                            Kier Nino
+                                            <span class="px-2"><i class="fa-solid fa-reply"></i> Reply</span>
+                                        </h6>
+                                        <div class="text-muted">
+                                            <p class="m-0 text">09 jan, 2025</p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Doloribus architecto expedita odit fuga. Ea,
+                                                ullam eius fugit, a, tenetur ipsam explicabo omnis
+                                                cupiditate ad cumque laborum distinctio at vero porro.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- inner comment -->
+                                <div class="d-flex gap-1 ps-5">
+                                    <img class="w-25 h-25"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s"
+                                        alt="" />
+                                    <div>
+                                        <h6 class="fw-bold m-0">
+                                            Kier Nino
+                                            <span class="px-2"><i class="fa-solid fa-reply"></i> Reply</span>
+                                        </h6>
+                                        <div class="text-muted">
+                                            <p class="m-0 text">09 jan, 2025</p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Doloribus architecto expedita odit fuga. Ea,
+                                                ullam eius fugit, a, tenetur ipsam explicabo omnis
+                                                cupiditate ad cumque laborum distinctio at vero porro.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-1">
+                                    <img class="w-25 h-25"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s"
+                                        alt="" />
+                                    <div>
+                                        <h6 class="fw-bold m-0">
+                                            Kier Nino
+                                            <span class="px-2"><i class="fa-solid fa-reply"></i> Reply</span>
+                                        </h6>
+                                        <div class="text-muted">
+                                            <p class="m-0 text">09 jan, 2025</p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Doloribus architecto expedita odit fuga. Ea,
+                                                ullam eius fugit, a, tenetur ipsam explicabo omnis
+                                                cupiditate ad cumque laborum distinctio at vero porro.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- leave a reply section -->
+                            <div class="mt-5 shadow py-4 px-3 d-flex flex-column gap-3 text-muted">
+                                <div>
+                                    <h6 class="m-0 mb-1 text-black fw-bold">Leave a Reply</h6>
+                                    <p class="m-0">
+                                        Your emaill address will not be publish. Required fields
+                                        are marked*
+                                    </p>
+                                </div>
+
+                                <div class="d-flex gap-3">
+                                    <input type="text" placeholder="Your Name" />
+                                    <input type="email" placeholder="Your Email" />
+                                </div>
+                                <input type="text" placeholder="Your Website" />
+                                <textarea name="" id="" placeholder="Your Message"></textarea>
+
+                                <div>
+                                    <button class="bg-black py-2 px-3 text-white border-0 rounded">
+                                        Post Comment
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <p class="card-text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Exercitationem itaque, magni quidem et ipsam quae fugiat
-                      expedita assumenda. Officia temporibus pariatur dolores
-                      dolorem minus explicabo molestiae aut. Ex, distinctio
-                      blanditiis!
-                    </p>
+                    <div class="col">
+                        <div class="shadow w-75 p-4">
+                            <h6 class="mb-3 fw-bold">Search</h6>
+                            <div class="d-flex mb-4">
+                                <input type="text" style="border: solid 1px rgb(220, 218, 218)"
+                                    class="p-2 w-100 rounded-start" /><span
+                                    class="py-2 bg-success text-white d-flex justify-content-center align-items-center rounded-end"
+                                    style="width: 10%"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                            <h6 class="mb-2 fw-bold">Categories</h6>
+                            <div class="mb-3">
+                                <p class="m-0">
+                                    General <span class="text-muted">(25)</span>
+                                </p>
+                                <p class="m-0">
+                                    Lifestyle <span class="text-muted">(12)</span>
+                                </p>
+                                <p class="m-0">Travel <span class="text-muted">(5)</span></p>
+                                <p class="m-0">Design <span class="text-muted">(22)</span></p>
+                                <p class="m-0">
+                                    Creative <span class="text-muted">(8)</span>
+                                </p>
+                                <p class="m-0">
+                                    Education <span class="text-muted">(14)</span>
+                                </p>
+                            </div>
+                            <div>
+                                <h6 class="mb-3 fw-bold">Recent Post</h6>
+                                <!-- Recent Post Card -->
+                                <div class="d-flex gap-2 mb-1">
+                                    <img src="https://spaces-cdn.clipsafari.com/fonc3iaqjfz274m12cl81e9ottfv" alt=""
+                                        class="w-25" />
+                                    <div>
+                                        <p class="m-0 fw-bold">blah blah lorem</p>
+                                        <p class="m-0 fst-italic text-muted">jan, 1,20025</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                    <img src="https://spaces-cdn.clipsafari.com/fonc3iaqjfz274m12cl81e9ottfv" alt=""
+                                        class="w-25" />
+                                    <div>
+                                        <p class="m-0 fw-bold">blah blah lorem</p>
+                                        <p class="m-0 fst-italic text-muted">jan, 1,20025</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                    <img src="https://spaces-cdn.clipsafari.com/fonc3iaqjfz274m12cl81e9ottfv" alt=""
+                                        class="w-25" />
+                                    <div>
+                                        <p class="m-0 fw-bold">blah blah lorem</p>
+                                        <p class="m-0 fst-italic text-muted">jan, 1,20025</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                    <img src="https://spaces-cdn.clipsafari.com/fonc3iaqjfz274m12cl81e9ottfv" alt=""
+                                        class="w-25" />
+                                    <div>
+                                        <p class="m-0 fw-bold">blah blah lorem</p>
+                                        <p class="m-0 fst-italic text-muted">jan, 1,20025</p>
+                                    </div>
+                                </div>
 
-                    <div
-                      class="d-flex py-4 px-1 justify-content-between gap-3 m-2"
-                      style="background-color: rgb(220, 218, 218)"
-                    >
-                      <div
-                        style="height: 8rem; width: 6px"
-                        class="bg-black"
-                      ></div>
-                      <div
-                        class="d-flex justify-content-center align-items-center text-muted fst-italic fw-bold fs-6"
-                      >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sed, eaque amet. Cupiditate unde autem eveniet sunt
-                        natus quisquam, ipsa asperiores animi atque assumenda
-                        molestiae fugit architecto quia ea, quas officiis?
-                      </div>
+                                <!-- Tag -->
+                                <div class="d-flex flex-wrap gap-2 mt-3">
+                                    <span class="p-2 border text-muted bg-white">App</span>
+                                    <span class="p-2 border text-muted bg-white">IT</span>
+                                    <span class="p-2 border text-muted bg-white">Business</span>
+                                    <span class="p-2 border text-muted bg-white">Design</span>
+                                    <span class="p-2 border text-muted bg-white">Office</span>
+                                    <span class="p-2 border text-muted bg-white">Creative</span>
+                                    <span class="p-2 border text-muted bg-white">Studio</span>
+                                    <span class="p-2 border text-muted bg-white">Smart</span>
+                                    <span class="p-2 border text-muted bg-white">Tips</span>
+                                    <span class="p-2 border text-muted bg-white">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis, est tempora. Quos optio fuga nostrum,
-                      cupiditate ut dicta labore incidunt, officiis harum est
-                      excepturi sapiente libero maiores laborum, mollitia error!
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Sit accusantium praesentium suscipit hic error dolores
-                      pariatur ducimus, minus ullam ipsa, iusto aliquid
-                      repudiandae blanditiis corrupti necessitatibus voluptate
-                      reiciendis quidem aliquam!
-                    </p>
-                    <h5 class="mt-4 mb-3">Lorem ipsum kahki</h5>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Repudiandae libero laborum labore quam sit quasi
-                      consequuntur itaque, accusantium possimus saepe numquam,
-                      animi quo nihil? Facilis cumque animi corporis illo
-                      nesciunt? Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Iure dolores modi optio itaque totam
-                      molestias, saepe repellendus accusamus minima, voluptate
-                      cumque. Dolor repudiandae architecto esse facere, hic
-                      eveniet non id!
-                    </p>
-                    <img
-                      class="w-100 mb-2"
-                      src="https://plus.unsplash.com/premium_photo-1752497523819-9d1e02553a66?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                      alt=""
-                    />
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Esse fugiat incidunt veniam et delectus suscipit facilis
-                      reprehenderit eum officiis rerum omnis animi, eveniet
-                      optio repellat aspernatur sit! Dolor, facere deleniti.
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Odio commodi expedita ab nemo minima autem in est
-                      cupiditate sapiente, corporis eveniet dolores numquam
-                      ducimus itaque nulla, iure blanditiis ipsa ratione.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maxime dolorum a rem est asperiores mollitia sapiente
-                      laborum non iure tempore, laudantium vero, id eius,
-                      exercitationem alias quia molestiae. Adipisci, quaerat.
-                    </p>
-                    <hr class="m-2" />
-                    <div
-                      class="d-flex gap-3 text-muted"
-                      style="font-size: 12px"
-                    >
-                      <div>
-                        <span><i class="fa-solid fa-folder"></i></span>
-                        Business
-                      </div>
-                      <div>
-                        <span><i class="fa-solid fa-tag"></i></span> Creative,
-                        Tips, Marketing
-                      </div>
-                    </div>
-                  </div>
                 </div>
-
-                <div class="shadow mt-4">
-                  <div class="d-flex gap-2 py-3 px-1">
-                    <div
-                      class="d-flex justify-content-center align-items-center"
-                    >
-                      <img
-                        class="rounded-circle w-100"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAu72pB24JrKJpqABtlUUqV02c4W-BaPyBQ&s"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <h5 class="m-0 mb-1">Mjay Humilde</h5>
-                      <div class="d-flex gap-2 text-muted mb-2">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                      </div>
-                      <p class="text-muted fst-italic">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Debitis assumenda odio eum, nulla, rem voluptates
-                        in dolor non placeat earum expedita cumque quos deserunt
-                        reiciendis, quaerat dolorem ratione magni? Numquam?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <h5 class="my-4 p-0">8 Comments</h5>
-
-                <!-- comment card -->
-                <div class="d-flex flex-column">
-                  <div class="d-flex gap-1">
-                    <img
-                      class="w-25 h-25"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s"
-                      alt=""
-                    />
-                    <div>
-                      <h6 class="fw-bold m-0">
-                        Kier Nino
-                        <span class="px-2"
-                          ><i class="fa-solid fa-reply"></i> Reply</span
-                        >
-                      </h6>
-                      <div class="text-muted">
-                        <p class="m-0 text">09 jan, 2025</p>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Doloribus architecto expedita odit fuga. Ea,
-                          ullam eius fugit, a, tenetur ipsam explicabo omnis
-                          cupiditate ad cumque laborum distinctio at vero porro.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <img
-                      class="w-25 h-25"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s"
-                      alt=""
-                    />
-                    <div>
-                      <h6 class="fw-bold m-0">
-                        Kier Nino
-                        <span class="px-2"
-                          ><i class="fa-solid fa-reply"></i> Reply</span
-                        >
-                      </h6>
-                      <div class="text-muted">
-                        <p class="m-0 text">09 jan, 2025</p>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Doloribus architecto expedita odit fuga. Ea,
-                          ullam eius fugit, a, tenetur ipsam explicabo omnis
-                          cupiditate ad cumque laborum distinctio at vero porro.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- inner comment -->
-                  <div class="d-flex gap-1 ps-5">
-                    <img
-                      class="w-25 h-25"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s"
-                      alt=""
-                    />
-                    <div>
-                      <h6 class="fw-bold m-0">
-                        Kier Nino
-                        <span class="px-2"
-                          ><i class="fa-solid fa-reply"></i> Reply</span
-                        >
-                      </h6>
-                      <div class="text-muted">
-                        <p class="m-0 text">09 jan, 2025</p>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Doloribus architecto expedita odit fuga. Ea,
-                          ullam eius fugit, a, tenetur ipsam explicabo omnis
-                          cupiditate ad cumque laborum distinctio at vero porro.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-flex gap-1">
-                    <img
-                      class="w-25 h-25"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s"
-                      alt=""
-                    />
-                    <div>
-                      <h6 class="fw-bold m-0">
-                        Kier Nino
-                        <span class="px-2"
-                          ><i class="fa-solid fa-reply"></i> Reply</span
-                        >
-                      </h6>
-                      <div class="text-muted">
-                        <p class="m-0 text">09 jan, 2025</p>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Doloribus architecto expedita odit fuga. Ea,
-                          ullam eius fugit, a, tenetur ipsam explicabo omnis
-                          cupiditate ad cumque laborum distinctio at vero porro.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- leave a reply section -->
-                <div
-                  class="mt-5 shadow py-4 px-3 d-flex flex-column gap-3 text-muted"
-                >
-                  <div>
-                    <h6 class="m-0 mb-1 text-black fw-bold">Leave a Reply</h6>
-                    <p class="m-0">
-                      Your emaill address will not be publish. Required fields
-                      are marked*
-                    </p>
-                  </div>
-
-                  <div class="d-flex gap-3">
-                    <input type="text" placeholder="Your Name" />
-                    <input type="email" placeholder="Your Email" />
-                  </div>
-                  <input type="text" placeholder="Your Website" />
-                  <textarea name="" id="" placeholder="Your Message"></textarea>
-
-                  <div>
-                    <button
-                      class="bg-black py-2 px-3 text-white border-0 rounded"
-                    >
-                      Post Comment
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
-
-            <div class="col">
-              <div class="shadow w-75 p-4">
-                <h6 class="mb-3 fw-bold">Search</h6>
-                <div class="d-flex mb-4">
-                  <input
-                    type="text"
-                    style="border: solid 1px rgb(220, 218, 218)"
-                    class="p-2 w-100 rounded-start"
-                  /><span
-                    class="py-2 bg-success text-white d-flex justify-content-center align-items-center rounded-end"
-                    style="width: 10%"
-                    ><i class="fa-solid fa-magnifying-glass"></i
-                  ></span>
-                </div>
-                <h6 class="mb-2 fw-bold">Categories</h6>
-                <div class="mb-3">
-                  <p class="m-0">
-                    General <span class="text-muted">(25)</span>
-                  </p>
-                  <p class="m-0">
-                    Lifestyle <span class="text-muted">(12)</span>
-                  </p>
-                  <p class="m-0">Travel <span class="text-muted">(5)</span></p>
-                  <p class="m-0">Design <span class="text-muted">(22)</span></p>
-                  <p class="m-0">
-                    Creative <span class="text-muted">(8)</span>
-                  </p>
-                  <p class="m-0">
-                    Education <span class="text-muted">(14)</span>
-                  </p>
-                </div>
-                <div>
-                  <h6 class="mb-3 fw-bold">Recent Post</h6>
-                  <!-- Recent Post Card -->
-                  <div class="d-flex gap-2 mb-1">
-                    <img
-                      src="https://spaces-cdn.clipsafari.com/fonc3iaqjfz274m12cl81e9ottfv"
-                      alt=""
-                      class="w-25"
-                    />
-                    <div>
-                      <p class="m-0 fw-bold">blah blah lorem</p>
-                      <p class="m-0 fst-italic text-muted">jan, 1,20025</p>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-2 mb-1">
-                    <img
-                      src="https://spaces-cdn.clipsafari.com/fonc3iaqjfz274m12cl81e9ottfv"
-                      alt=""
-                      class="w-25"
-                    />
-                    <div>
-                      <p class="m-0 fw-bold">blah blah lorem</p>
-                      <p class="m-0 fst-italic text-muted">jan, 1,20025</p>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-2 mb-1">
-                    <img
-                      src="https://spaces-cdn.clipsafari.com/fonc3iaqjfz274m12cl81e9ottfv"
-                      alt=""
-                      class="w-25"
-                    />
-                    <div>
-                      <p class="m-0 fw-bold">blah blah lorem</p>
-                      <p class="m-0 fst-italic text-muted">jan, 1,20025</p>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-2 mb-1">
-                    <img
-                      src="https://spaces-cdn.clipsafari.com/fonc3iaqjfz274m12cl81e9ottfv"
-                      alt=""
-                      class="w-25"
-                    />
-                    <div>
-                      <p class="m-0 fw-bold">blah blah lorem</p>
-                      <p class="m-0 fst-italic text-muted">jan, 1,20025</p>
-                    </div>
-                  </div>
-
-                  <!-- Tag -->
-                  <div class="d-flex flex-wrap gap-2 mt-3">
-                    <span class="p-2 border text-muted bg-white">App</span>
-                    <span class="p-2 border text-muted bg-white">IT</span>
-                    <span class="p-2 border text-muted bg-white">Business</span>
-                    <span class="p-2 border text-muted bg-white">Design</span>
-                    <span class="p-2 border text-muted bg-white">Office</span>
-                    <span class="p-2 border text-muted bg-white">Creative</span>
-                    <span class="p-2 border text-muted bg-white">Studio</span>
-                    <span class="p-2 border text-muted bg-white">Smart</span>
-                    <span class="p-2 border text-muted bg-white">Tips</span>
-                    <span class="p-2 border text-muted bg-white"
-                      >Marketing</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-         <footer>
-    <div class="footer-container">
-      <div class="container py-5">
-        <div class="row gap-4">
-          <div class="col">
-            <div class="w-50">
-              <div class="footer-contents">
-                <h5 class="m-0 fw-bold">COMPANY</h5>
-                <p class="m-0 mb-2">
-                  Samapaloc, Bolinao, Pangasinan, Carizal st. 085
-                </p>
-
-                <p class="m-0">
-                  <span class="fw-bold">Phone</span> 0947325097
-                </p>
-                <p class="m-0">
-                  <span class="fw-bold">Email</span> example@gmail.com
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
+    <footer>
+        <div class="bg-dark">
             <div class="container">
-              <div class="row gap-2">
-                <div class="col">
-                  <div>
-                    <h6 class="fw-bold">Usefull Links</h6>
-                    <div class="footer-contents">
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Home
-                      </p>
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        About us
-                      </p>
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Services
-                      </p>
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Terms of service
-                      </p>
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Privacy policy
-                      </p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 text-white py-3 p-sm-5 gap-4 gap-sm-0">
+                    <div class="col">
+                        <h5 class="m-0 fw-bold ps-2 ps-sm-0">COMPANY</h5>
+
+                        <div class="ps-2 ps-sm-0">
+                            <p class="m-0 mb-2">
+                                Samapaloc, Bolinao, Pangasinan, Carizal st. 085
+                            </p>
+
+                            <p class="m-0">
+                                <span class="fw-bold">Phone</span> 0947325097
+                            </p>
+                            <p class="m-0">
+                                <span class="fw-bold">Email</span> example@gmail.com
+                            </p>
+                        </div>
+
                     </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div>
-                    <h6 class="fw-bold">Our Services</h6>
-                    <div class="footer-contents">
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Web Design
-                      </p>
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Web Development
-                      </p>
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Product Management
-                      </p>
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Marketing
-                      </p>
-                      <p class="m-2">
-                        <span><i class="fa-solid fa-chevron-right"></i></span>
-                        Graphic Design
-                      </p>
+                    <div class="col ">
+                        <div>
+                            <h6 class="fw-bold">Usefull Links</h6>
+                            <div class="footer-contents">
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Home
+                                </p>
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    About us
+                                </p>
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Services
+                                </p>
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Terms of service
+                                </p>
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Privacy policy
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="col ">
+                        <div>
+                            <h6 class="fw-bold">Our Services</h6>
+                            <div class="footer-contents">
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Web Design
+                                </p>
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Web Development
+                                </p>
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Product Management
+                                </p>
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Marketing
+                                </p>
+                                <p class="m-2">
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    Graphic Design
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <h6 class="fw-bold">Join our Newsletter</h6>
+                        <div class="footer-contents">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing eliolest
+                                etur adipisicing eliolest
+                            </p>
+                            <div class="d-flex">
+                                <input class="news-letter-input" type="text" />
+                                <button class="subscribe-btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col">
-            <div>
-              <h6 class="fw-bold">Join our Newsletter</h6>
-              <div class="footer-contents">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing eliolest
-                  etur adipisicing eliolest
-                </p>
-                <div class="d-flex">
-                  <input class="news-letter-input" type="text" />
-                  <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <div class="copyright-container">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center py-3">
+                    <div>
+                        <p class="m-0">
+                            &copy; Copyright
+                            <span class="fw-bold">TestSite</span>
+                            . All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center gap-2">
+                        <div class="footer-icon p-1 rounded">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="footer-icon p-1 rounded">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="footer-icon p-1 rounded">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="footer-icon p-1 rounded">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copyright-container">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center py-3">
-          <div>
-            <p class="m-0">
-              &copy; Copyright
-              <span class="fw-bold">TestSite</span>
-              . All Rights Reserved
-            </p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center gap-2">
-            <div class="footer-icon p-1 rounded">
-              <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div class="footer-icon p-1 rounded">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="footer-icon p-1 rounded">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="footer-icon p-1 rounded">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-  </footer>
-  </body>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
