@@ -38,6 +38,7 @@
 .service-card {
   background-color: white;
   padding: 80px 40px;
+  width: 100%;
 }
 
 .icon-ball {
