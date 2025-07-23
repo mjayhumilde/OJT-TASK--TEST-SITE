@@ -72,21 +72,73 @@
 
   <main>
     <section>
-      <div class="bg-hero position-relative">
-        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-center align-items-center pb-5">
-          <div class="hero-content p-3 d-flex flex-column gap-2 w-75">
-            <h5 class="fw-bold">Lorem ipsum dolor siteque, eo</h5>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-              doloribus earum laudantium veniam accusamus itaque! Nam modi
-              accusamus dolore enim deleniti officia exercitationem,
-              perspiciatis nisi nobis, ducimus repellendus eius impedit.
-            </p>
-            <div class="d-flex justify-content-center align-items-center">
-              <span class="hero-btn">Read More</span>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+            class="active rounded-circle" aria-current="true" aria-label="Slide 1"
+            style="width: 3px; padding: 1px;"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"
+            style="width: 3px; padding: 1px;" class=" rounded-circle"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"
+            style="width: 3px; padding: 1px;" class=" rounded-circle"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b2ZmaWNlJTIwbWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              class="d-block w-100" alt="...">
+            <div
+              class="carousel-caption d-none d-md-block bg-black bg-opacity-75  mb-5 text-start p-5 border-top border-4 border-success ">
+              <h5>First slide label</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempore officia esse eum ab inventore
+                culpa suscipit, recusandae veniam voluptatem, ratione asperiores provident. Culpa nihil pariatur qui
+                harum numquam similique.</p>
+              <div class="text-center"><button
+                  class="py-2 px-4 text-white border-3 border-success rounded bg-transparent bg-opacity-50">Read
+                  More</button></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwbWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              class="d-block w-100" alt="...">
+            <div
+              class="carousel-caption d-none d-md-block bg-black bg-opacity-75  mb-5 text-start p-5 border-top border-4 border-success ">
+              <h5>Second slide label</h5>
+              <p>SLorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempore officia esse eum ab inventore
+                culpa suscipit, recusandae veniam voluptatem, ratione asperiores provident. Culpa nihil pariatur qui
+                harum numquam similique.</p>
+              <div class="text-center"><button
+                  class="py-2 px-4 text-white border-3 border-success rounded bg-transparent bg-opacity-50">Read
+                  More</button></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/007/110/603/large_2x/people-at-the-office-having-a-business-meeting-near-an-accountability-board-young-start-up-business-team-working-in-meeting-room-photo.jpg"
+              class="d-block w-100" alt="...">
+            <div
+              class="carousel-caption d-none d-md-block bg-black bg-opacity-75  mb-5 text-start p-5 border-top border-4 border-success ">
+              <h5>Third slide label</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempore officia esse eum ab inventore
+                culpa suscipit, recusandae veniam voluptatem, ratione asperiores provident. Culpa nihil pariatur qui
+                harum numquam similique.</p>
+              <div class="text-center"><button
+                  class="py-2 px-4 text-white border-3 border-success rounded bg-transparent bg-opacity-50">Read
+                  More</button></div>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
@@ -136,48 +188,9 @@
       </div>
     </section>
 
-    <section style="background-color: rgb(250 250 250);;">
+    <section style="background-color: rgb(250 250 250);">
       <div class="container">
-        <div class="row text-center  px-4 p-5">
-          <div class="col col-12 col-md-6 col-lg-4 p-5 shadow-sm bg-white"><i
-              class="fs-5 icon-ball fa-solid fa-basketball"></i>
-            <h5>Lorem Ipsum</h5>
-            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati
-              invedita, aperiam
-              dolorem molestias. Corporis, accusamus ipsa?</p>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-4 p-5 shadow-sm bg-white"><i
-              class="fs-5 icon-docs fa-regular fa-file-lines"></i>
-            <h5>Lorem Ipsum</h5>
-            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati
-              invedita, aperiam
-              dolorem molestias. Corporis, accusamus ipsa?</p>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-4 p-5 shadow-sm bg-white"><i
-              class="fs-5 icon-speed fa-solid fa-gauge-simple-high"></i>
-            <h5>Lorem Ipsum</h5>
-            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati
-              invedita, aperiam
-              dolorem molestias. Corporis, accusamus ipsa?</p>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-4 p-5 shadow-sm bg-white"><i
-              class="fs-5 icon-layer fa-solid fa-layer-group"></i>
-            <h5>Lorem Ipsum</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam
-              dolorem molestias. Corporis, accusamus ipsa?</p>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-4 p-5 shadow-sm bg-white"><i class="fs-5 icon-tv fa-solid fa-tv"></i>
-            <h5>Lorem Ipsum</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam
-              dolorem molestias. Corporis, accusamus ipsa?</p>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-4 p-5 shadow-sm bg-white"><i
-              class="fs-5 icon-bridge fa-solid fa-bridge"></i>
-            <h5>Lorem Ipsum</h5>
-            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati
-              invedita, aperiam
-              dolorem molestias. Corporis, accusamus ipsa?</p>
-          </div>
+        <div class="js-sevices-container row text-center g-1  px-4 p-5">
         </div>
       </div>
     </section>
@@ -188,9 +201,9 @@
           <button class="gall-navs border gall-nav-active rounded border-0">
             ALL
           </button>
-          <button class="gall-navs border rounded border-0 text-muted">APP</button>
-          <button class="gall-navs border rounded border-0 text-muted">CARD</button>
-          <button class="gall-navs border rounded border-0 text-muted">WEB</button>
+          <button class="gall-navs border rounded border-0 ">APP</button>
+          <button class="gall-navs border rounded border-0 ">CARD</button>
+          <button class="gall-navs border rounded border-0 ">WEB</button>
         </div>
 
         <div class="container-fluid gallery-container">
@@ -246,33 +259,7 @@
           <hr class="horizontal-line" />
         </div>
         <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 px-5 ">
-            <div class="col d-flex justify-content-center align-items-center border p-2">
-              <img class="w-25" src="./images/homepage/logo1.png" alt="" />
-            </div>
-            <div class="col d-flex justify-content-center align-items-center border p-2">
-              <img class="w-25" src="./images/homepage/logo2.png" alt="" />
-            </div>
-            <div class="col d-flex justify-content-center align-items-center border p-2">
-              <img class="w-25" src="./images/homepage/logo3.png" alt="" />
-            </div>
-            <div class="col d-flex justify-content-center align-items-center border p-2">
-              <img class="w-25" src="./images/homepage/logo4.png" alt="" />
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 px-5 ">
-            <div class="col d-flex justify-content-center align-items-center border p-2">
-              <img class="w-25" src="./images/homepage/logo5.png" alt="" />
-            </div>
-            <div class="col d-flex justify-content-center align-items-center border p-2">
-              <img class="w-25" src="./images/homepage/logo6.png" alt="" />
-            </div>
-            <div class="col d-flex justify-content-center align-items-center border p-2">
-              <img class="w-25" src="./images/homepage/logo7.png" alt="" />
-            </div>
-            <div class="col d-flex justify-content-center align-items-center border p-2">
-              <img class="w-25" src="./images/homepage/logo8.png" alt="" />
-            </div>
+          <div class="row px-5 text-center js-clients-card-container">
           </div>
         </div>
       </div>
@@ -402,6 +389,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="./scripts/pages/home.js" type="module"></script>
+  <script src="./scripts/shared/shared-sections.js" type="module"></script>
 </body>
 
 </html>
