@@ -29,17 +29,6 @@
   color: green;
 }
 
-.horizontal-line {
-  margin-top: 0px;
-  margin-bottom: 1rem;
-  width: 5rem;
-  height: 2px;
-  background-color: green;
-  border: none;
-
-  font-weight: bold;
-}
-
 .feat-1 {
   color: red;
 }

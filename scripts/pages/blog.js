@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   blogs.forEach((item) => {
     blogHTML += `
-         <div class="row">
+         <div class="row me-lg-4">
             <div class="card border-0 shadow rounded-0 p-0">
             <img
                 src="${item.image}"
