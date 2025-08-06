@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // clients section
   clients.forEach((item) => {
     clientsHTML += `
-      <div class="col col-12 col-sm-6 col-md-3 border p-2 justify-content-center d-flex">
+      <div class="col border p-2 justify-content-center d-flex">
           ${item.image}
       </div>
     `;
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
   services.forEach((item) => {
     servicesHTML += `
             <div class="col">
-              <div class="p-5 h-100 bg-white shadow">
+              <div class="p-5 h-100 bg-white">
                 ${item.icon}
                 <h4>${item.title}</h4>
                 <p>${item.description}</p>
