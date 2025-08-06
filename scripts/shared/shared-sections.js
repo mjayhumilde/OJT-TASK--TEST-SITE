@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let services = [
     {
-      icon: `<i class="fs-5 icon-ball fa-solid fa-basketball"></i>;`,
+      icon: `<i class="fs-5 border icon-ball fa-solid fa-basketball"></i>`,
       title: "Lorem Ipsum",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam dolorem molestias. Corporis, accusamus ipsa?",
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // clients section
   clients.forEach((item) => {
     clientsHTML += `
-      <div class="col col-12 col-sm-6 col-md-3 border p-2">
+      <div class="col border p-2 justify-content-center d-flex">
           ${item.image}
       </div>
     `;
@@ -113,10 +113,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // service section
   services.forEach((item) => {
     servicesHTML += `
-            <div class="col col-12 col-md-6 col-lg-4 p-5 shadow-sm bg-white">
+            <div class="col">
+              <div class="p-5 h-100 bg-white">
                 ${item.icon}
-                <h5>${item.title}</h5>
-                <p class="text-muted">${item.description}</p>
+                <h4>${item.title}</h4>
+                <p>${item.description}</p>
+              </div>
             </div>
           `;
   });
