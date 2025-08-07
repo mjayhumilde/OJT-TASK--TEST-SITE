@@ -35,37 +35,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let services = [
     {
-      icon: `<i class="fs-5 border icon-ball fa-solid fa-basketball"></i>`,
+      icon: `<i class="fs-5 icon-ball fa-solid fa-basketball" style="color: blue;"></i>`,
       title: "Lorem Ipsum",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam dolorem molestias. Corporis, accusamus ipsa?",
     },
     {
-      icon: `<i class="fs-5 icon-docs fa-regular fa-file-lines"></i>`,
+      icon: `<i class="fs-5 icon-docs fa-regular fa-file-lines" style="color: pink;"></i>`,
       title: "Lorem Ipsum",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam dolorem molestias. Corporis, accusamus ipsa?",
     },
     {
-      icon: `<i class="fs-5 icon-speed fa-solid fa-gauge-simple-high"></i>`,
+      icon: `<i class="fs-5 icon-speed fa-solid fa-gauge-simple-high" style="color: red;"></i>`,
       title: "Lorem Ipsum",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam dolorem molestias. Corporis, accusamus ipsa?",
     },
     {
-      icon: `<i class="fs-5 icon-layer fa-solid fa-layer-group"></i>`,
+      icon: `<i class="fs-5 icon-layer fa-solid fa-layer-group" style="color: yellow;"></i>`,
       title: "Lorem Ipsum",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam dolorem molestias. Corporis, accusamus ipsa?",
     },
     {
-      icon: `<i class="fs-5 icon-tv fa-solid fa-tv"></i>`,
+      icon: `<i class="fs-5 icon-tv fa-solid fa-tv" style="color: cyan;"></i>`,
       title: "Lorem Ipsum",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam dolorem molestias. Corporis, accusamus ipsa?",
     },
     {
-      icon: `<i class="fs-5 icon-bridge fa-solid fa-bridge"></i>`,
+      icon: `<i class="fs-5 icon-bridge fa-solid fa-bridge" style="color: magenta;"></i>`,
       title: "Lorem Ipsum",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nam tenetur obcaecati invedita, aperiam dolorem molestias. Corporis, accusamus ipsa?",
